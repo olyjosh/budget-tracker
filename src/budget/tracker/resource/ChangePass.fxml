@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="372.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="budget.tracker.controllers.ChangePassController">
+  <children>
+    <HBox id="HBox" fx:id="hbox" alignment="CENTER" layoutX="0.0" layoutY="5.0" prefHeight="29.000099999997474" prefWidth="372.0" spacing="5.0">
+      <children>
+        <Text fill="#bfbfbf" fontSmoothingType="LCD" scaleX="1.5958999292183338" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password" textAlignment="CENTER" underline="true">
+          <font>
+            <Font name="System Bold" size="14.0" />
+          </font>
+        </Text>
+      </children>
+      <effect>
+        <DropShadow height="25.174107142857146" radius="12.055431547619047" spread="0.5714285714285714" width="25.047619047619047" />
+      </effect>
+    </HBox>
+    <HBox id="HBox" alignment="CENTER" layoutX="160.0" layoutY="214.0" spacing="5.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#okHandler" prefHeight="27.0" prefWidth="66.0" text="Change">
+          <effect>
+            <Reflection bottomOpacity="0.2222222222222222" fraction="0.6706349206349207" topOffset="-50.0" topOpacity="0.47619047619047616">
+              <input>
+                <DropShadow height="56.7328869047619" radius="28.04036458333333" spread="0.16666666666666666" width="57.42857142857142" />
+              </input>
+            </Reflection>
+          </effect>
+          <tooltip>
+            <Tooltip text="change the password" />
+          </tooltip>
+        </Button>
+      </children>
+    </HBox>
+    <Label fx:id="close" layoutX="349.0" layoutY="5.0" minHeight="14.0" prefHeight="14.0" prefWidth="18.0" text="" />
+    <PasswordField fx:id="password" layoutX="160.0" layoutY="73.0" prefWidth="182.0" promptText="Old password">
+      <tooltip>
+        <Tooltip text="old password" />
+      </tooltip>
+    </PasswordField>
+    <PasswordField id="password" fx:id="newPass" layoutX="160.0" layoutY="120.0" onKeyReleased="#compare" onKeyTyped="#compare" prefWidth="182.0" promptText="New Password">
+      <tooltip>
+        <Tooltip text="Your new password" />
+      </tooltip>
+    </PasswordField>
+    <PasswordField id="password" fx:id="againPass" layoutX="160.0" layoutY="167.0" onKeyReleased="#compare" onKeyTyped="#compare" prefWidth="182.0" promptText="Retype New Password">
+      <tooltip>
+        <Tooltip text="please re-type password for confirmation" />
+      </tooltip>
+    </PasswordField>
+    <Label layoutX="36.0" layoutY="79.0" prefWidth="99.00009999999747" text="Old password:" />
+    <Label layoutX="36.0" layoutY="126.0" text="New Password:" />
+    <Label layoutX="36.0" layoutY="173.0" text="Password Again:" />
+    <Label fx:id="errLab" prefHeight="18.0" prefWidth="220.31048583984375" styleClass="validatingLabel" text="" textAlignment="CENTER" AnchorPane.bottomAnchor="243.0" AnchorPane.leftAnchor="107.69" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="43.0" />
+  </children>
+  <stylesheets>
+    <URL value="@css/css.css" />
+  </stylesheets>
+</AnchorPane>

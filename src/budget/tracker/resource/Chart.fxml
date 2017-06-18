@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="parentAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="858.0000999999975" snapToPixel="true" styleClass="AnchorPane, background, background2" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="budget.tracker.controllers.ChartController">
+    <children>
+        <AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="554.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <LineChart fx:id="lineChart" alternativeColumnFillVisible="false" alternativeRowFillVisible="false" horizontalGridLinesVisible="true" horizontalZeroLineVisible="true" legendSide="RIGHT" legendVisible="true" prefWidth="478.0" title="Income, Expenditure over time" verticalGridLinesVisible="true" verticalZeroLineVisible="true" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="24.0">
+                    <xAxis>
+                        <CategoryAxis animated="false" label="Date" side="BOTTOM" tickLabelFill="#0c9900" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis label="Amount" prefHeight="352.0" prefWidth="46.0" side="LEFT" tickLabelFill="#009918" tickLabelsVisible="true" upperBound="1000000.0" />
+                    </yAxis>
+                </LineChart>
+                <Hyperlink id="greenLink" onAction="#createPieChatStage" text="Explanatory Pie Chart" underline="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="1.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@css/css.css" />
+    </stylesheets>
+</AnchorPane>

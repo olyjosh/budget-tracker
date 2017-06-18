@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="372.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="budget.tracker.controllers.ConfirmController">
+    <children>
+        <HBox id="HBox" fx:id="hbox" alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="18.0" prefWidth="372.0" spacing="5.0">
+            <effect>
+                <DropShadow height="25.30059523809524" radius="12.087053571428573" spread="0.5714285714285714" width="25.047619047619047" />
+            </effect>
+        </HBox>
+        <HBox id="HBox" alignment="CENTER" layoutX="118.0" layoutY="108.0" spacing="5.0">
+            <children>
+                <Button id="yellowButton" fx:id="closeButton" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="66.0" text="Cancel">
+                    <effect>
+                        <Reflection bottomOpacity="0.2222222222222222" fraction="0.6706349206349207" topOffset="-50.0" topOpacity="0.47619047619047616">
+                            <input>
+                                <DropShadow height="56.03720238095238" radius="27.86644345238095" spread="0.16666666666666666" width="57.42857142857142" />
+                            </input>
+                        </Reflection>
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#okHandler" prefHeight="27.0" prefWidth="66.0" text="Proceed">
+                    <effect>
+                        <Reflection bottomOpacity="0.2222222222222222" fraction="0.6706349206349207" topOffset="-50.0" topOpacity="0.47619047619047616">
+                            <input>
+                                <DropShadow height="56.03720238095238" radius="27.86644345238095" spread="0.16666666666666666" width="57.42857142857142" />
+                            </input>
+                        </Reflection>
+                    </effect>
+                    <tooltip>
+                        <Tooltip text="This will delete all records associated with this account" />
+                    </tooltip>
+                </Button>
+            </children>
+        </HBox>
+        <Label layoutX="36.0" layoutY="31.0" text="Are you sure you want to delete this account" textAlignment="CENTER" underline="false" wrapText="false" />
+        <VBox id="VBox" alignment="CENTER" layoutX="63.0" layoutY="53.0" spacing="5.0">
+            <children>
+                <PasswordField fx:id="password" prefWidth="215.0" promptText="Enter password to continue">
+                    <tooltip>
+                        <Tooltip text="Enter user password to continue" />
+                    </tooltip>
+                </PasswordField>
+                <Label id="errlabel" fx:id="errLab" prefWidth="253.0" text="" textAlignment="CENTER" />
+            </children>
+        </VBox>
+        <Label fx:id="close" layoutX="354.0" layoutY="0.0" minHeight="14.0" prefHeight="14.0" prefWidth="18.0" text="" />
+    </children>
+    <stylesheets>
+        <URL value="@css/css.css" />
+    </stylesheets>
+</AnchorPane>

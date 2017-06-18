@@ -1,0 +1,353 @@
+
+.AnchorPane {
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,118,1), rgba(255,255,255,0));
+    -fx-background-radius: 10 10 10 10;
+
+}
+
+.table-view {
+    -fx-border-width: 0;
+    -fx-border-color: red;
+}
+
+.whiteCurveBackground{
+    -fx-font-size: 12pt;
+    -fx-font-family: "Ariel";   
+    -fx-background-color: white, rgb(255, 255, 255);
+    -fx-background-radius: 10 10 10 10;
+
+}
+
+.split-pane{
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,118,1), rgba(255,255,255,0));
+}
+
+.background2 {
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,255,1), rgba(255,255,255,0));
+}
+
+.menu-item{
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,118,1), rgba(255,255,255,0));
+}
+
+.menu-item:hover {
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#ffb800, #ffb80a),
+        radial-gradient(center 50% 0%, radius 100%, rgba(100,100,100,0.5), rgba(150,150,250,0));
+}
+
+.menu-item:selected {
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#ffb800, #ffb80a),
+        radial-gradient(center 50% 0%, radius 100%, rgba(100,100,100,0.5), rgba(150,150,250,0));
+}
+
+.context-menu{
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,118,1), rgba(255,255,255,0));
+    -fx-background-radius: 5 5 5 5;
+}
+
+.background {
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,118,1), rgba(255,255,255,0));
+}
+
+.top-segment {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: 
+        transparent transparent rgb(255, 255, 255, 0.08) transparent,
+        transparent transparent rgb(0, 0, 0, 0.5) transparent;
+    -fx-border-width: 1, 1.5;
+    -fx-border-insets: -1, 0; 
+}
+
+.top-segment1 {
+    -fx-background-color: rgba(100, 255, 100, 0.05);
+    -fx-border-color: 
+        transparent transparent rgb(255, 255, 255, 0.08) transparent,
+        transparent transparent rgb(0, 0, 0, 0.5) transparent;
+    -fx-border-width: 1, 1.5;
+    -fx-border-insets: -1, 0; 
+}
+
+.label {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 15;
+    -fx-text-fill: rgb(0, 255, 255, 0.9);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+}
+
+#errlabel {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 12;
+    -fx-text-fill: rgb(255, 150, 0, 0.9);
+    /*-fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );*/
+}
+
+#timeLabel{
+    -fx-font-family: Times new Roman;
+    -fx-font-size: 17;
+    -fx-text-fill: rgb(0, 255, 0, 0.9);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+
+}
+
+.validatingLabel {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 11;
+    -fx-text-fill: rgb(255, 0, 0, 0.9);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+}
+
+.infoLabel {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 11;
+    -fx-text-fill: rgb(255, 255, 255, 1);
+    ;
+}
+
+.outPutLabel {
+    -fx-font-family: "DigifaceWide";
+    -fx-font-size: 18;
+    -fx-text-fill: rgb(0, 255, 0, 1);
+    ;
+}
+
+.profileTitle {
+    -fx-font-size: 18;
+}
+
+.hyperlink {
+    -fx-font-family: "Arial";
+    -fx-font-size: 18;
+    -fx-text-fill: rgb(255, 255, 255, 0.4);
+    -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
+    -fx-border-width: 0;
+}
+
+#greenLink{
+    -fx-text-fill: greenyellow;
+    -fx-font-size: 15;
+}
+
+.hyperlink:focused {
+    -fx-text-fill: rgb(255, 255, 255, 0.6);
+}
+
+.check-box .box {
+    -fx-background-color:
+        rgb(255, 255, 255, 0.1),
+        rgb(0, 0, 0, 1),
+        -fx-outer-border,
+        -fx-inner-border,
+        -fx-body-color;
+    -fx-background-insets: 0 -1.6 -2 -1.6, -1.4, 0, 1, 2;
+}
+
+.check-box:focused .box {
+    -fx-background-color:
+        rgb(255, 255, 255, 0.15),
+        rgb(0, 0, 0, 0.8),
+        -fx-outer-border,
+        -fx-inner-border,
+        white;
+}
+
+.text-field {
+    -fx-font-size: 16;
+    -fx-background-color:
+        rgb(255, 255, 255, 0.3),
+        linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+        rgb(218, 226, 224);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "Arial";
+}
+
+.text-area {
+    -fx-font-size: 12;
+    -fx-background-color:
+        rgb(255, 255, 255, 0.3),
+        linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+        rgb(218, 226, 224);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "Arial";
+}
+
+
+.text-fieldOut, .text-areaOut {
+    -fx-font-color:rgb(0, 255, 0, 0.9);
+    -fx-font-size: 18;
+    -fx-background-color:
+        rgb(100, 100, 255, 0.3),
+        linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+        rgb(218, 226, 224);
+    -fx-background-insets: 0 0 -1 0, 0, 1.5;
+    -fx-background-radius: 6, 5, 4;
+    -fx-padding: 6 10 4 10;
+    -fx-effect: innershadow( gaussian, rgb(0, 0, 0, 0.8), 5, 0, 0, 2 );
+    -fx-font-family: "DigifaceWide";
+}
+
+.text-area {
+    -fx-padding: 6 5 6 5;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-prompt-text-fill:
+        rgb(128,128,128);
+    -fx-background-color:
+        rgb(235, 235, 235, 0.5),
+        rgb(0, 0, 0, 0.4),
+        rgb(255, 255, 255);
+}
+
+#newButton{
+    -fx-background-color: green, black,linear-gradient(rgb(0, 110, 0, 1), rgb(0, 180, 0, 1));
+    -fx-background: rgba(0, 152, 0, 1);
+    -fx-color: rgba(0, 152, 0, 1);
+}
+
+.button{
+
+    /*    -fx-background-color:
+            rgb(235, 235, 235, 0.5),
+            rgb(0, 0, 0, 0.4),
+            rgb(100, 255, 200);*/
+    /*-fx-background-color: rgba(0, 152, 0, 1);*/
+    -fx-background-color: green, black,linear-gradient(rgb(0, 110, 0, 1), rgb(0, 180, 0, 1));
+    -fx-background: rgba(0, 152, 0, 1);
+    -fx-color: rgba(0, 152, 0, 1);
+}
+
+#yellowButton{
+
+    /*    -fx-background-color:
+            rgb(235, 235, 235, 0.5),
+            rgb(0, 0, 0, 0.4),
+            rgb(100, 255, 200);*/
+    /*-fx-background-color: rgba(0, 152, 0, 1);*/
+    -fx-background-color: green, black,linear-gradient(rgb(200, 200, 20, 1), rgb(220, 235, 35, 1));
+    -fx-background: rgba(220, 216, 35, 1);
+    -fx-color: rgba(0, 152, 0, 1);
+}
+
+
+.button:hover{
+
+
+    /*    -fx-background-color: rgba(0, 152, 0, 0.7);*/
+    -fx-background-color: green, black,linear-gradient(rgb(0, 110, 0,0.7), rgb(0, 180, 0, 0.7));
+    -fx-background: rgba(0, 152, 0, 0.7);
+    -fx-color: rgba(0, 152, 0, 0.7);
+}
+
+
+.darkList .list-cell {
+    -fx-padding: 6 0 0 13;
+    -fx-background-color: derive(master-color, -60%);
+    -fx-text-fill: lightgrey;
+}
+
+
+
+.table-view .column-header .label {
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+}
+
+.list-view-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-view-cell:even { /* <=== changed to even */
+    -fx-background-color: white;
+}
+
+.list-view-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+
+
+
+.tooltip{
+    -fx-background-image: url("CoarseGrid.png");
+    -fx-background-repeat: repeat;
+    -fx-background-color:
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,118,1), rgba(255,255,255,0));
+}
+
+.default-color0.chart-series-line{ -fx-stroke: green;}
+.default-color1.chart-series-line{ -fx-stroke: red;}
+.default-color0.chart-line-symbol{ -fx-background-color: white,green;}
+.default-color1.chart-line-symbol{ -fx-background-color: white,red;}
+.chart-pie:hover {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+}
+
+.chart-pie-label-line{
+    -fx-fill: #8b4513;
+    -fx-stroke: #8b4513;
+}
+
+.chart-pie-label{
+    -fx-fill: #ffffff;
+    -fx-font-size: 1.5em;
+    -fx-background-color: #339900
+}
+
+/*.chart-legend{}*/
+
+.default-color0.chart-pie{-fx-background-color:  radial-gradient(center 50% 0%, radius 100%, #ff6699, #ff0033);}
+.default-color1.chart-pie{-fx-background-color: radial-gradient(center 50% 0%, radius 100%, #66ff66, #339900);}
+
+
+/* css gradient for chocolate
+    radial-gradient(center 50% 0%, radius 100%, rgba(100,50,30,1), rgba(150,50,30,0.5));
+*/
+

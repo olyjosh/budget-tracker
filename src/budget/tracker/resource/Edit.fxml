@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="537.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="budget.tracker.controllers.EditController">
+  <children>
+    <HBox id="HBox" fx:id="hbox" alignment="CENTER" layoutX="40.0" layoutY="5.0" prefHeight="30.0" prefWidth="448.0" spacing="5.0">
+      <children>
+        <Text fill="#bfbfbf" fontSmoothingType="LCD" scaleX="1.5958999292183338" scaleY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit entry" textAlignment="CENTER" underline="true">
+          <font>
+            <Font name="System Bold" size="14.0" />
+          </font>
+        </Text>
+      </children>
+      <effect>
+        <DropShadow height="25.06343005952381" radius="12.027762276785715" spread="0.5714285714285714" width="25.047619047619047" />
+      </effect>
+    </HBox>
+    <Label fx:id="close" layoutX="514.0" layoutY="11.0" minHeight="14.0" prefHeight="14.0" prefWidth="18.0" text="" />
+    <HBox id="HBox" alignment="CENTER" layoutX="76.0" layoutY="43.0" prefWidth="398.0" spacing="5.0">
+      <children>
+        <TextField fx:id="editDes" prefWidth="85.69000244140625" />
+        <TextField id="editAount" fx:id="editAmount" prefWidth="86.0" />
+        <TextField fx:id="editRef" prefWidth="86.0" />
+        <ChoiceBox fx:id="inc" prefWidth="86.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="EXPENDITURE" />
+              <String fx:value="INCOME" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+      </children>
+    </HBox>
+    <Button layoutX="231.0" layoutY="88.0" mnemonicParsing="false" onAction="#okHandler" prefHeight="27.0" prefWidth="66.0" text="Save">
+      <effect>
+        <Reflection bottomOpacity="0.2222222222222222" fraction="0.6706349206349207" topOffset="-50.0" topOpacity="0.47619047619047616">
+          <input>
+            <DropShadow height="57.34161086309523" radius="28.192545572916664" spread="0.16666666666666666" width="57.42857142857142" />
+          </input>
+        </Reflection>
+      </effect>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@css/css.css" />
+  </stylesheets>
+</AnchorPane>

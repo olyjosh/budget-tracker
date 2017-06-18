@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="433.9998779296875" styleClass="AnchorPane, background, background2" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="budget.tracker.controllers.NewController">
+  <children>
+    <AnchorPane minHeight="33.0" prefHeight="383.0" prefWidth="447.9998779296875" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <TextField fx:id="name" layoutX="155.0" layoutY="88.0" prefWidth="200.0" />
+        <TextField fx:id="desc" layoutX="155.0" layoutY="132.0" prefWidth="200.0" />
+        <Label layoutX="68.0" layoutY="94.0" text="Entry Name" />
+        <Label layoutX="68.0" layoutY="137.0" text="Description" />
+        <PasswordField fx:id="pass" layoutX="155.0" layoutY="173.0" onKeyTyped="#dataChange" prefWidth="200.0" />
+        <Label layoutX="68.0" layoutY="180.0" text="Password" />
+        <Label layoutX="69.0" layoutY="220.0" text="Confirm" />
+        <PasswordField fx:id="confPass" layoutX="155.0" layoutY="215.0" prefWidth="200.0" />
+        <ProgressBar fx:id="prog" disable="false" layoutX="364.0" layoutY="180.0" prefWidth="66.0" progress="0.0" style="" visible="false" />
+        <Separator layoutX="46.0" layoutY="69.0" prefWidth="340.0" />
+        <Label layoutX="69.0" layoutY="260.0" prefWidth="76.0" text="Starting Capital" />
+        <Separator layoutX="46.0" layoutY="384.0" prefWidth="340.0" />
+        <TextField fx:id="starting" layoutX="155.0" layoutY="256.0" prefWidth="200.0" text="0.00" />
+        <Label id="errlabel" fx:id="outLabel" layoutX="75.0" layoutY="311.0" prefWidth="119.0" text="Label" textAlignment="CENTER" visible="false" />
+        <Button layoutX="275.0" layoutY="342.0" mnemonicParsing="false" onAction="#createNew" prefHeight="29.0" prefWidth="80.0" text="CREATE">
+          <font>
+            <Font name="Arial Bold" size="13.0" />
+          </font>
+        </Button>
+        <Label layoutX="68.0" layoutY="300.0" prefWidth="76.0" text="Currency" />
+        <ChoiceBox fx:id="curr" layoutX="155.0" layoutY="297.0" prefWidth="200.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Naira" />
+              <String fx:value="Forint" />
+              <String fx:value="Dollar" />
+              <String fx:value="Pounds" />
+              <String fx:value="Euro" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@css/css.css" />
+  </stylesheets>
+</AnchorPane>
